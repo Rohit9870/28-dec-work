@@ -1,0 +1,33 @@
+package lesser_or_greater_10;
+import java.util.Scanner;
+
+
+public class Lesser_or_greater_10 {
+    static void function(int n){
+        if(n>10){
+            System.out.println("greater than 10");
+        }
+        else if(n<10){
+            if(n>5){
+               System.out.println("greater than 5");
+            }
+            else if(n<5){
+                System.out.println("less than 5");
+            }
+            else{
+                System.out.println("you have entered 5");
+            }
+            
+        }
+        else{
+            System.out.println("you have entered 10");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        function(n);
+    }
+    
+}
